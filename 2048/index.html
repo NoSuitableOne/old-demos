@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>红唇烈焰版2048</title>
+    <link rel="stylesheet" href="css/2048.css">
+    <link rel="Shortcut Icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="ct layout">
+        <div class="header clearfloat">
+            <div class="col4">
+                <div class="title">
+                    <h2 class="main-title">2048</h2>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="score-ct">
+                    <h2 class="score-head">分数</h2>
+                    <p id="score">0</p>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="record-ct">
+                    <h2 class="record-head">最高得分</h2>
+                    <p id="record">0</p>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="btn-ct">
+                    <div class="row2">
+                        <div class="btn" id="restart">
+                            <p>重新开始</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="btn" id="descript">
+                            <p>游戏说明</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="descript-page">
+                <ul>
+                    <li>
+                        <p>方向键或者W、A、S、D键移动棋盘上的格子</p>
+                    </li>
+                    <li>
+                        <p>如果移动方向上有空格，带数字的格子会移动到空格处</p>
+                    </li>
+                    <li>
+                        <p>两个相等的数字碰撞后会相加</p>
+                    </li>
+                    <li>
+                        <p>不要让棋盘上的数字无法移动</p>
+                    </li>
+                    <li>
+                        <p>拼出2048吧^_^</p>
+                    </li>
+                </ul>
+                <div class="btn" id="resume">继续游戏</div>      
+            </div>
+            
+            <div class="gameover-page">
+                <div class="gameover-ct">
+                    <p>GAMEOVER</p>
+                </div>
+            </div>
+               
+            <div class="board-page">
+                <div id="board">
+                    <div class="grid-cell" id="grid-cell-0-0"></div>
+                    <div class="grid-cell" id="grid-cell-0-1"></div>
+                    <div class="grid-cell" id="grid-cell-0-2"></div>
+                    <div class="grid-cell" id="grid-cell-0-3"></div>
+                    <div class="grid-cell" id="grid-cell-1-0"></div>
+                    <div class="grid-cell" id="grid-cell-1-1"></div>
+                    <div class="grid-cell" id="grid-cell-1-2"></div>
+                    <div class="grid-cell" id="grid-cell-1-3"></div>
+                    <div class="grid-cell" id="grid-cell-2-0"></div>
+                    <div class="grid-cell" id="grid-cell-2-1"></div>
+                    <div class="grid-cell" id="grid-cell-2-2"></div>
+                    <div class="grid-cell" id="grid-cell-2-3"></div>
+                    <div class="grid-cell" id="grid-cell-3-0"></div>
+                    <div class="grid-cell" id="grid-cell-3-1"></div>
+                    <div class="grid-cell" id="grid-cell-3-2"></div>
+                    <div class="grid-cell" id="grid-cell-3-3"></div>
+                </div>    
+            </div>
+            
+        </div>
+
+    </div>
+
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/2048btn.js"></script>
+<script src="js/2048UI.js"></script>
+<script src="js/2048support.js"></script>
+<script src="js/2048move.js"></script>
+<script src="js/2048main.js"></script>
+<script>
+window.onload=function(){
+    game();
+}    
+</script>
+</body>
+
+</html>

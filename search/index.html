@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/bing_p_rr_teal_min.ico" type="image/x-icon">
+    <title>bing search</title>
+    <style>
+        /*统一样式*/
+        
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            height: 100%;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .clear:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /*布局样式*/
+        
+        .page-ct {
+            width: 100%;
+            height: 100%;
+            background-color: #666;
+            position: relative;
+        }
+        
+        .header {
+            height: 40px;
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 0;
+            height: 40px;
+            width: 100%;
+        }
+        /*头部*/
+        
+        .header p {
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+            line-height: 40px;
+            padding-left: 20px;
+        }
+        /*主体部分*/
+        
+        #bg {
+            position: absolute;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.3s;
+        }
+        /*蒙层*/
+        
+        .cover {
+            position: absolute;
+            z-index: 9;
+            background-color: #000;
+            width: 100%;
+            opacity: 0.7;
+            display: none;
+        }
+        /*搜索框部分*/
+        
+        .search-ct {
+            position: absolute;
+            top: 160px;
+            left: 200px;
+            height: auto;
+            width: 530px;
+            min-width: 600px;
+            z-index: 99;
+        }
+        
+        .logo {
+            float: left;
+            margin-right: 18px;
+            width: 107px;
+            height: 53px;
+            background-image: url(img/hp_zh_cn.png);
+            background-repeat: no-repeat;
+        }
+        
+        .search-form {
+            float: left;
+            margin-top: 4px;
+            min-width: 400px;
+        }
+        
+        .search-text {
+            float: left;
+            height: 19px;
+            line-height: 19px;
+            outline: none;
+            width: 400px;
+            background-color: #fff;
+            border: 0;
+            padding: 13px 4px;
+            font-size: 19px;
+        }
+        
+        .search-btn {
+            float: left;
+            width: 45px;
+            height: 45px;
+            background: #0c8484 url("img/hpc18.png") no-repeat;
+            background-position: -169px -63px;
+            border: 8px solid #0c8484;
+            cursor: pointer;
+        }
+        
+        .search-smart-list {
+            float: left;
+            border-top: 1px solid #ccc;
+            width: 453px;
+            background-color: #fff;
+            display: none;
+        }
+        
+        .search-smart-list li {
+            padding: 0 4px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 19px;
+            cursor: pointer;
+        }
+        
+        .search-smart-list li:hover {
+            background-color: #ccc;
+        }
+        /*左右箭头*/
+        
+        .btn-ct {
+            position: absolute;
+            right: 60px;
+            bottom: 20px;
+        }
+        
+        .arrow {
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 900;
+            transition: 0.3s;
+        }
+        
+        .arrow-end {
+            border: 1px solid #ccc;
+            color: #aaa;
+        }
+        
+        .arrow-hover {
+            background-color: #fff;
+            color: #000;
+        }
+        /*底部部分*/
+        
+        .footer p {
+            margin: 0;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="page-ct">
+        <div class="header">
+            <p>仿写bing搜索引擎首页，真的可以搜哦</p>
+        </div>
+        <div class="main" id="bg" data-img=0>
+            <div class="cover"></div>
+            <div class="search-ct clear">
+                <div class="logo"></div>
+                <form class="search-form clear" title="搜索" action="https://cn.bing.com/search" target="_blank" method="get">
+                    <input class="search-text" name="q" type="text" value="" autocomplete="off" />
+                    <input class="search-btn" type="submit" value="" />
+                </form>
+                <ul class="search-smart-list">
+                    <!--<li>example1</li>
+                    <li>example2</li>-->
+                </ul>
+            </div>
+            <div class="btn-ct">
+                <div class="arrow" id="left">&lt;</div>
+                <div class="arrow" id="right">&gt;</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p><a href="#" class="link">点我查看Github源码</a></p>
+        </div>
+    </div>
+
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
