@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <html lang="zh-CN">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-spy="scroll" data-target="#page-nav">
+    <!--导航部分-->     
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="page-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <!--响应式菜单折叠-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
+                <a class="navbar-brand nav-resume-logo" href="#">
+                    简历
+                </a>
+            </div>
+            <div class="navbar-collapse collapase">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="theme-nav-color" href="#home">主页</a></li>
+                    <li><a class="theme-nav-color" href="#skills">掌握技能</a></li>
+                    <li><a class="theme-nav-color" href="#works">作品展示</a></li>
+                    <li><a class="theme-nav-color" href="#person-info">个人介绍</a></li>
+                    <li><a class="theme-nav-color" href="#callme">联系我</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle theme-nav-color" data-toggle="dropdown" role="button">
+                            更多信息
+                            <span class="caret"></span>    
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="theme-nav-dropdown-color" href="https://github.com/grorgema">Github</a></li>
+                            <li><a class="theme-nav-dropdown-color" href="https://grorgema.github.io.">博客</a></li>
+                        </ul>
+                    </li>                  
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <!--导航 END-->
+    <!--主页-->
+    <section class="home fullscreen" id="home">
+        <div class="container home-wrap">
+            <div class="home-img-ct">
+                <img src="img/head-photo.gif" alt="头像" class="img-circle head-photo center-block">
+            </div>
+            <div class="home-title-ct">
+                <h1 class="text-center">
+                    <strong>我是马羽翔</strong>
+                </h1>
+                <h3 class="text-center">你们正在寻找的前端攻城狮</h3>
+            </div>
+        </div>
+    </section> 
+    <!--主页 END-->
+    <!--技能-->
+    <section class="skills section theme-color" id="skills">
+        <div class="container">
+            <div class="title-wrap">
+                <div class="row">
+                    <h3>掌握HTML、CSS、Javascript</h3>
+                    <h3><small class="theme-small-color">会使用JQuery，熟悉AJAX，了解Bootstrap</small></h3>
+                    <div class="col-md-8  col-sm-8">
+                        今日的前端已经不仅仅是把设计稿做成HTML这么简单，但是我作为前端工程师掌握HTML、CSS、Javascript这些基础知识，也能在开发中使用库和框架提高效率。另一方面，我懂得前后端数据如何交互、http协议的工作原理、AJAX技术、跨域技术等，同时有良好的文档阅读能力，可以很好地配合团队完成前端开发工作。
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="skills-carousel" class="carousel slide" data-ride="carousel">
+                <!-- 轮播图片指示器 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#skills-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#skills-carousel" data-slide-to="1"></li>
+                        <li data-target="#skills-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner skills-box" role="listbox">
+                        <div class="item active">
+                            <div class="skills-des">
+                                <div class="row">
+                                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-2 col-xs-offset-2 skills-item">
+                                        <i class="fa fa-html5 fa-4x"></i>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <h4 class="text-center">掌握HTML</h4>
+                                        <p>
+                                            会使用HTML标签，了解HTML5新标签，对语义化有认识。
+                                            真正理解标签的使用场景，能写出规范的网页结构。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="skills-des">
+                                <div class="row">
+                                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-2 col-xs-offset-2 skills-item">
+                                        <i class="fa fa-css3 fa-4x"></i>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <h4 class="text-center">掌握CSS</h4>
+                                        <p>
+                                            熟练运用css实现网页布局、样式。
+                                            对于基本的网页实现可手写css样式，也了解并能使用bootstrap这样的前端框架。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="skills-des">
+                                <div class="row">
+                                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-2 col-xs-offset-2 skills-item">
+                                        <i class="fa fa-edit fa-4x"></i>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <h4 class="text-center">掌握Javascript</h4>
+                                        <p>
+                                            熟悉原生JS，熟悉JS基本语法，懂得操作DOM、事件机制、AJAX等知识。
+                                            理解面向对象编程，可封装函数实现小功能。
+                                            掌握JQuery，可利用JQuery进行日常开发。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="skills-des">
+                                <div class="row">
+                                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-2 col-xs-offset-2 skills-item">
+                                        <i class="fa fa-wifi fa-4x"></i>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <h3 class="text-center">熟悉前端开发相关知识</h3>
+                                        <p>
+                                            熟悉产品开发流程，懂得前后端数据如何交互，在无后端支持情况下可MOCK数据，完成产品开发。
+                                            了解HTTP协议，懂得网络请求过程，会利用开发者工具查看网络响应、解决问题。
+                                            有良好的文档阅读能力，会利用文档上手新框架/库。
+                                            熟悉Git等版本控制工具。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- Controls -->
+                    <a class="left carousel-control theme-color-carsouel" href="#skills-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control theme-color-carsouel" href="#skills-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="skills-des">
+                        <i class="fa fa-file-text fa-4x"></i>
+                        <h4>掌握HTML</h4>
+                        <p>
+                            会使用HTML标签，了解HTML5新标签，对语义化有认识。
+                            真正理解标签的使用场景，能写出规范的网页结构
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="skills-des">
+                        <i class="fa fa-desktop fa-4x"></i>
+                        <h4>掌握CSS</h4>
+                        <p>
+                            熟练运用css实现网页布局、样式。
+                            对于基本的网页实现可手写css样式，也了解并能使用bootstrap这样的前端框架
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="skills-des">
+                        <i class="fa fa-edit fa-4x"></i>
+                        <h4>掌握Javascript</h4>
+                        <p>
+                            会使用HTML标签，了解HTML5新标签，对语义化有认识。
+                            真正理解标签的使用场景，能写出规范的网页结构
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="skills-des">
+                        <i class="fa fa-exchange fa-4x"></i>
+                        <h4>还有其他</h4>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </section> 
+    <!--技能 END-->
+    <!--作品-->
+    <section class="works section theme-color" id="works">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                    <h1 class="text-center">作品展示</h1>
+                    <p class="text-center theme-small-color">
+                        一些个人作品，展示了我对技术的实际运用。
+                    </p>    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="works-wrap">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="work-ct">
+                            <a href="www.baidu.com">
+                                <img src="img/head-img.gif" alt="" class="img-responsive">
+                                <h4 class="text-center theme-small-color">作品地址</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="work-ct">
+                           <a href="www.baidu.com">
+                                <img src="img/head-img.gif" alt="" class="img-responsive">
+                                <h4 class="text-center  theme-small-color">作品地址</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="work-ct">
+                            <a href="www.baidu.com">
+                                <img src="img/head-img.gif" alt="" class="img-responsive">
+                                <h4 class="text-center theme-small-color">作品地址</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="work-ct">
+                            <a href="www.baidu.com">
+                                <img src="img/head-img.gif" alt="" class="img-responsive">
+                                <h4 class="text-center theme-small-color">作品地址</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="work-ct">
+                            <a href="www.baidu.com">
+                                <img src="img/head-img.gif" alt="" class="img-responsive">
+                                <h4 class="text-center theme-small-color">作品地址</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="work-ct">
+                            <a href="www.baidu.com">
+                                <img src="img/head-img.gif" alt="" class="img-responsive">
+                                <h4 class="text-center theme-small-color">作品地址</h4>
+                            </a>
+                        </article>
+                    </div>
+                </div> 
+            </div>   
+        </div>
+    </section>
+    <!--作品 END-->
+    <!--个人介绍-->
+    <section class="person-info section theme-color" id="person-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-4 col-xs-12">
+                    <div class="resume-download center-block">
+                        <p class="resume-pdf text-center">
+                            <i class="fa fa-file-pdf-o"></i>    
+                        </p>
+                        <a target="_blank" class="btn text-center btn-default center-block resume-download-btn" href="#">下载简历（PDF版）</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="resume-desc text-right">
+                        <h3 class="text-right">教育经历</h3>
+                        <p class="text-muted">本科：中国地质大学（武汉）获 工学学士</p>
+                        <h3 class="text-right">工作经历</h3>
+                        <p class="text-muted">杭州世纪联华华商集团有限公司</p>
+                        <p class="text-muted">杭州左中右电动汽车服务有限公司（微公交）</p>
+                        <h3 class="text-right">对前端的热爱</h3>
+                        <p class="text-muted">我想用代码构筑华丽的世界</p>
+                        <h3 class="text-right">期望工作地点</h3>
+                        <p class="text-muted">杭州最佳，考虑周边城市</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section> 
+    <!--个人介绍 END-->
+    <!--联系我-->
+    <section class="callme section theme-bg-color" id="callme">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                    <h3 class="text-center">联系我</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="callme-wrap">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+                        <ul>
+                            <h3>联系方式</h3>
+                            <li>手机： 18771058757</li>
+                            <li>qq: 79513731@qq.com</li>
+                            <li>微信号： immayuxiang</li>
+                            <li>邮箱： 79513731@qq.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="callme-img-wrap text-center">
+                            <h5>qq二维码</h5>
+                            <img class="img-responsive center-block" src="img/qq.gif" alt="QQ二维码">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="callme-img-wrap text-center">
+                             <h5>微信二维码</h5>
+                            <img class="img-responsive center-block" src="img/weixin.gif" alt="微信二维码">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!--联系我 END-->
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+</body>
+</html>

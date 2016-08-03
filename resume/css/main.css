@@ -1,0 +1,122 @@
+.theme-color {
+    color: #5e4a9e;
+}
+.theme-bg-color {
+    background-color: #5e4a9e;
+    color: #fff;
+}
+.theme-small-color {
+    color: #574d79;
+}
+.navbar-default 
+.navbar-nav > li > .theme-nav-color {
+    color: #374d79;
+}
+.navbar-default 
+.navbar-nav > li > .theme-nav-color:focus,
+.navbar-default 
+.navbar-nav > li > .theme-nav-color:hover {
+    border: 1px solid #374d79;
+    border-radius: 6px;
+    color: #374d79;
+}
+.dropdown-menu > li > .theme-nav-dropdown-color {
+    color: #374d97;
+}
+.dropdown-menu > li > .theme-nav-dropdown-color:hover {
+    color:#374d97;
+}
+.nav-active {
+    border: 1px solid #374d79;
+    border-radius: 6px;
+    color: #374d79;
+}
+.navbar-default 
+.nav-resume-logo {
+    font-family: "STKaiti FangSong SimSun";
+    font-weight: 900;
+    background-color: #374d79;
+    color: #fff;
+    margin: 0 4px 0 4px; 
+}
+.navbar-default 
+.nav-resume-logo:hover {
+    background-color: #374d79;
+    color: #fff;
+}
+.theme-color-carsouel {
+    color: #5e4a9e;
+}
+.theme-color-carsouel:focus, .theme-color-carsouel:hover {
+    color: #5e4a9e;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+}
+html,body {
+    height:100%;
+}
+.fullscreen {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/head-img.gif);
+    background-size: cover;
+}
+.home-wrap {
+    padding: 150px 0 150px 0;
+} 
+.head-photo {
+    width: 200px;
+    height: 200px;
+    border: 6px solid #ccc;
+}
+.home-title-ct {
+    color: #fff;
+}
+.section {
+    padding: 80px 0 90px 0;
+}
+.title-wrap {
+    padding: 20px 0 40px 0;
+}
+.skills-box {
+    height: 200px;
+}
+.skills-item {
+    padding: 60px 0 60px 0;
+}
+.works {
+    background-color: #f4f4f4;
+}
+.works-wrap {
+    margin-top: 80px;
+}
+.work-ct {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 #ddd;
+    -webkit-box-shadow: 0 1px 2px 0 #ddd;
+    -moz-box-shadow: 0 1px 2px 0 #ddd;
+}
+.resume-download {
+    background-color: #fff;
+    padding: 60px 15px 60px 15px;
+    border: 1px solid #5e4a9e;
+    width: 280px;
+    margin-bottom: 20px;
+}
+.resume-pdf {
+    font-size: 108px;
+}
+.resume-download-btn {
+    margin-top: 40px;
+}
+.resume-desc {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.callme-wrap {
+    margin-top: 60px;
+}
+
