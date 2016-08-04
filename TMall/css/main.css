@@ -43,13 +43,30 @@ img {
     height: 100%;
 }
 .left-ad-close {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: block;
     background-color: #fff;
     width: 10px;
     height: 10px;
+    text-align: center;
     line-height: 10px;
     margin-left: 110px;
     cursor: pointer;
+    z-index: 999;
+}
+.github-link {
+    position: absolute;
+    top: 85px;
+    background-color: #bbb;
+    width: 120px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+.github-link a {
+    color: #000;
 }
 /*右侧广告栏*/
 #float-ad-right {
@@ -88,6 +105,7 @@ img {
 }
 /*nav-bar样式*/
 #nav {
+    position: relative;
     height: 26px;
     width: auto;
     min-width: 990px;

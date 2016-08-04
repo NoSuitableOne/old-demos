@@ -16,7 +16,8 @@ $(window).on("scroll",function(){
 })
 /*左侧广告*/
 /*关闭广告*/
-$("#float-ad-left").on("click",".left-ad-close",function(){
+$("#float-ad-left").on("click",".left-ad-close",function(event){
+    event.stopPropagation();
     $("#float-ad-left").attr("hidden","hidden");
 })
 /*右侧广告*/
@@ -68,7 +69,7 @@ function isJustVisiable($node){
 }
 /*返回顶部*/
 $("#gotop").on("click",function(){
-    $("body").animate({scrollTop:0},500);
+    $("html,body").animate({scrollTop:0},500);
 })
 
 

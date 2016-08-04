@@ -61,9 +61,11 @@ html,body {
     height: 100%;
     background-image: url(../img/head-img.gif);
     background-size: cover;
+    display: table;
 }
 .home-wrap {
     padding: 150px 0 150px 0;
+    display: table-cell;
 } 
 .head-photo {
     width: 200px;
@@ -71,6 +73,13 @@ html,body {
     border: 6px solid #ccc;
 }
 .home-title-ct {
+    color: #fff;
+}
+.home-wrap a {
+    color: #fff;
+}
+.home-wrap a:hover {
+    text-decoration: underline;
     color: #fff;
 }
 .section {
