@@ -88,6 +88,9 @@ html,body {
 .title-wrap {
     padding: 20px 0 40px 0;
 }
+.skills-lead {
+    margin: 0 15px 0 15px;
+}
 .skills-box {
     height: 200px;
 }
