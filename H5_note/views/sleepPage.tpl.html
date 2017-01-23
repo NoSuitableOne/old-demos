@@ -1,0 +1,24 @@
+<div class="wrap" data-ng-controller="sleepController">
+    <p>
+        <span>有充足的睡眠时间恢复龙体</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <p>
+        <span>睡眠时间有规律</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <p>
+        <span>没有失眠</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <p>
+        <span>睡眠后不曾感到头晕缺氧、龙体疲乏</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <div class="checkok" data-ng-click="check()" data-ng-bind="buttonText"></div>
+    <div class="finish" data-ng-show="finalResult"><span class="result">恭喜主上打卡成功。祝主上龙体康健、福寿绵长！</span></div>
+<div>

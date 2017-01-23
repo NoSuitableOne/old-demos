@@ -1,0 +1,24 @@
+<div class="wrap" data-ng-controller="dietController">
+    <p>
+        <span>按时用膳</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <p>
+        <span>膳食搭配合理，有荤有素有水果</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <p>
+        <span>记得喝水</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <p>
+        <span>不曾酗酒</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <div class="checkok" data-ng-click="check()" data-ng-bind="buttonText"></div>
+    <a class="continue-link" href="../#/exercisePage" data-ng-show="continue">继续打卡<i class="fa fa-angle-double-right"></i></a>
+<div>

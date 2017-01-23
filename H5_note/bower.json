@@ -1,0 +1,25 @@
+{
+  "name": "h5note",
+  "description": "notebook H5 project",
+  "main": "",
+  "keywords": [
+    "notebook",
+    "H5"
+  ],
+  "authors": [
+    "MA"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mobile": "*",
+    "mobile-angular-ui": "^1.3.4"
+  }
+}

@@ -1,0 +1,19 @@
+<div class="wrap" data-ng-controller="exerciseController">
+    <p>
+        <span>朕有去外面溜达几步，不是一直处（lan）理（de）朝（dong）政（tan）</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <p>
+        <span>近来有特地运动，不曾疏于锻炼</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <p>
+        <span>没有在无训练的情况下突然参加高强度的运动项目</span>&nbsp&nbsp
+        <i class="check fa fa-check-square-o" data-ng-if="continue"></i>
+        <i class="default-check fa fa-spinner fa-pulse fa-3x fa-fw" data-ng-if="!continue"></i>
+    </p>
+    <div class="checkok" data-ng-bind="buttonText" data-ng-click="check()"></div>
+    <a class="continue-link" href="../#/sleepPage" data-ng-show="continue">继续打卡<i class="fa fa-angle-double-right"></i></a>
+<div>
