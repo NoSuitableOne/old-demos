@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<title>RUS-Blocks</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<body>
+    <div id="title">H5版俄罗斯方块</div>
+    <div id='main'>
+        <div id='body'></div>
+        <div id='score'></div>
+        <div id='level'></div>
+        <div id='next'></div>
+        <div id="panel">
+            <div id="rotate" class="btn">旋转</div>	
+            <div id="left" class="btn">向左</div>
+            <div id="right" class="btn">向右</div>
+            <div id="down" class="btn">加速</div>
+        </div>
+        <div id='ctrl'>
+            <button id="start">新游戏</button>
+            <button id="refresh">暂停</button>
+        </div>
+    </div>
+    <div id="footer">
+    	<div id="over">GAMEOVER</div>
+    	<div class="footer-text">提示:<br />点击右侧按钮操作<br />瞄准了可以加速<br />长条不是一直有哦</div>
+    </div>
+
+<script src="js/index.js" type="text/javascript"></script>
+<script>
+	window.onload = function(){
+		document.getElementById("right").addEventListener("click",function(){
+            G.move(G.x - 1, G.y, G.t);
+        });
+        document.getElementById("left").addEventListener("click",function(){
+            G.move(G.x + 1, G.y, G.t);
+        });
+        document.getElementById("down").addEventListener("click",function(){
+            G.timeTesk();
+        });
+        document.getElementById("rotate").addEventListener("click",function(){
+            G.move(G.x, G.y, (G.t + 1) % G.d[G.n].length);        
+        });
+        document.getElementById("start").addEventListener("click",function(){
+            location.href=location.href;        
+        });
+        document.getElementById("refresh").addEventListener("click",function(){
+            this.innerHTML={'true':'开始','false':'暂停'}[G.pause=!!!G.pause];        
+        });
+        G.init();
+    };
+</script>
+</body>
+</html>
+
