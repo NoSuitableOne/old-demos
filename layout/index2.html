@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>双飞翼／圣杯布局</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .head, footer {
+      background-color: #f8f8f8;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .main {
+      display: grid;
+      grid-template-columns: 200px auto 200px;
+      grid-template-rows: auto;
+    }
+    .aside, .extra {
+      width: 200px;
+    }
+    .content {
+      background-color: pink;
+    }
+    .aside {
+      background-color: orange;
+    }
+    .extra {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <header class="head">头部</header>
+  <main class="main">
+    <div class="aside">侧边栏定宽</div>
+    <div class="content">三栏式双飞翼布局中间自适应grid实现</div>  
+    <div class="extra">右侧定宽</div>
+  </main>
+  <footer class="footer">脚部</footer>
+</body>
+</html>
